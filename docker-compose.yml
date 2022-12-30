@@ -1,6 +1,11 @@
 version: '3.3'
 services:
-
+  angular:
+    build: 
+      context: .
+      dockerfile: docker/angular.Dockerfile
+    ports:
+      - "8899:80"
   #PHP Service
   app:
     build:
