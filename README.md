@@ -1,13 +1,10 @@
 ## Install with Docker
 
-- git clone ... && cd UDOY-LARAVEL
-- git branch
-- git fetch --all
-- sudo git fetch --all
-- sudo git checkout --track origin/develop
-- git checkout develop
+- git clone 
+- cd LARAVEL-DOCKER
+- git checkout laravel_10
 - `docker-compose up -d`
-- `docker exec -it udoy /bin/bash`
+- `docker exec -it laravel /bin/bash`
 - `composer install`
 - `cp .env.example .env`
 - `php artisan key:generate`

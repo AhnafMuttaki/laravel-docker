@@ -1,7 +1,8 @@
-FROM php:8.1-fpm
+FROM php:8.2-fpm
 
 # Copy composer.lock and composer.json
-COPY project-LARAVEL/composer.lock project-LARAVEL/composer.json /var/www/
+# COPY project-LARAVEL/composer.lock project-LARAVEL/composer.json /var/www/
+COPY project-LARAVEL/composer.json /var/www/
 
 # Set working directory
 WORKDIR /var/www
